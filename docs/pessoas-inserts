@@ -1,0 +1,2 @@
+INSERT INTO dev_challenge.pessoa (id, cpf, nome, data_nascimento) VALUES (1, '60393843360', 'Simão Ítalo de Matos Ramos', '1993-03-13');
+INSERT INTO dev_challenge.pessoa (id, cpf, nome, data_nascimento) VALUES (2, '01774810301', 'Karina Jéssica Pereira de Souza', '1992-12-24');

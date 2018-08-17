@@ -1,0 +1,434 @@
+{
+	"info": {
+		"_postman_id": "f19945c0-939a-432a-be90-969e89fce9f9",
+		"name": "dev-challenge",
+		"description": "Projeto desenvolvido para teste de seleção da empresa Conductor.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pessoas",
+			"description": null,
+			"item": [
+				{
+					"name": "findOne",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/pessoas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"pessoas",
+								"1"
+							]
+						},
+						"description": "Recupera informação de uma Pessoa a partir do ID."
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/pessoas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"pessoas"
+							]
+						},
+						"description": "Recupera lista de todas as Pessoas cadastradas."
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"cpf\": \"60393843360\",\n\t\"nome\": \"Simão Ítalo\",\n\t\"dataNascimento\": \"1993-03-13\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/pessoas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"pessoas"
+							]
+						},
+						"description": "Cadastra uma nova Pessoa."
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"cpf\": \"60393843360\",\n\t\"nome\": \"Simão Ítalo de Matos Ramos\",\n\t\"dataNascimento\": \"1993-03-13\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/pessoas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"pessoas",
+								"1"
+							]
+						},
+						"description": "Atualiza o registro de uma Pessoa."
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/pessoas/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"pessoas",
+								"4"
+							]
+						},
+						"description": "Exclui o registro de uma Pessoa."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contas",
+			"description": "",
+			"item": [
+				{
+					"name": "findOne",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/contas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"contas",
+								"1"
+							]
+						},
+						"description": "Recupera o registro de uma Conta a partir do ID."
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/contas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"contas"
+							]
+						},
+						"description": "Recupera os registros de todas as Contas cadastrasdas."
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"cpf\": \"60393843360\",\n\t\"tipoConta\": \"Corrente\",\n\t\"limiteSaqueDiario\": 50\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/contas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"contas"
+							]
+						},
+						"description": "Cadastra o registro de uma nova Conta."
+					},
+					"response": []
+				},
+				{
+					"name": "deposit",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/contas/4/deposito?valor=20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"contas",
+								"4",
+								"deposito"
+							],
+							"query": [
+								{
+									"key": "valor",
+									"value": "20"
+								}
+							]
+						},
+						"description": "Deposita uma quantia na Conta."
+					},
+					"response": []
+				},
+				{
+					"name": "withdraw",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/contas/4/saque?valor=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"contas",
+								"4",
+								"saque"
+							],
+							"query": [
+								{
+									"key": "valor",
+									"value": "10"
+								}
+							]
+						},
+						"description": "Saca uma quantia de uma Conta."
+					},
+					"response": []
+				},
+				{
+					"name": "getSaldo",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/contas/4/saldo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"contas",
+								"4",
+								"saldo"
+							]
+						},
+						"description": "Consulta o saldo atual de uma Conta."
+					},
+					"response": []
+				},
+				{
+					"name": "getExtrato",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/contas/4/extrato",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"contas",
+								"4",
+								"extrato"
+							]
+						},
+						"description": "Consulta o todo o histórico de transações de uma conta."
+					},
+					"response": []
+				},
+				{
+					"name": "getExtratoByPeriod",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/contas/4/extrato?dataInicio=2018-05-01&dataFim=2018-05-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"contas",
+								"4",
+								"extrato"
+							],
+							"query": [
+								{
+									"key": "dataInicio",
+									"value": "2018-05-01"
+								},
+								{
+									"key": "dataFim",
+									"value": "2018-05-01"
+								}
+							]
+						},
+						"description": "Consulta o histórico de transações de uma Conta, podendo opcionalmente filtrar por data inicial e final."
+					},
+					"response": []
+				},
+				{
+					"name": "block",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8080/api-challenge/contas/4/bloqueio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api-challenge",
+								"contas",
+								"4",
+								"bloqueio"
+							]
+						},
+						"description": "Bloqueia uma Conta."
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
