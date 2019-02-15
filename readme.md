@@ -4,33 +4,33 @@
 
 - Considerando a entidade conta a seguir:
 
-        | Contas | Tipo |
-        |-|-|
-        | idConta | Numérico |
-        | idPessoa | Numérico |
-        | saldo | Monetário |
-        | limiteSaqueDiario | Monetário |
-        | flagAtivo | Condicional |
-        | tipoConta | Numérido |
-        | dataCriacao | Data |
+    | Contas | Tipo |
+    |-|-|
+    | idConta | Numérico |
+    | idPessoa | Numérico |
+    | saldo | Monetário |
+    | limiteSaqueDiario | Monetário |
+    | flagAtivo | Condicional |
+    | tipoConta | Numérido |
+    | dataCriacao | Data |
 
 - Tabela de transações realizadas na conta:
 
-        | Transacoes | Tipo |
-        |-|-|
-        | idTransacao | Numérico |
-        | idConta | Numérico |
-        | valor | Monetário |
-        | dataTransacao | Data |
+    | Transacoes | Tipo |
+    |-|-|
+    | idTransacao | Numérico |
+    | idConta | Numérico |
+    | valor | Monetário |
+    | dataTransacao | Data |
 
 - P.S.: Não é necessário realizar operações com a tabela pessoa, mas é necessária a criação da tabela para mapeamento da relação com a conta e enviar script de criação de pelo menos uma pessoa.
 
-        | Pessoas | Tipo |
-        |-|-|
-        | idPessoa | Numérico |
-        | nome | Texto |
-        | cpf | Texto |
-        | dataNascimento | Data |
+    | Pessoas | Tipo |
+    |-|-|
+    | idPessoa | Numérico |
+    | nome | Texto |
+    | cpf | Texto |
+    | dataNascimento | Data |
 
 - Escopo mínimo:
     ```
